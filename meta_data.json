@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "data (things)",
+        "2": "payment",
+        "3": "productivity",
+        "4": "technical"
+    },
+    "description": "This is the nexus.io blockchain Finance API, which creates, lists or retrieves information about blockchain account registers on Nexus blockchain. ",
+    "image": "//meta-q.cdn.bubble.io/f1710341388014x691012229243297400/nameless.jpg",
+    "license": "open_source",
+    "link": "https://github.com/Nexusoft/LLL-TAO/blob/merging/docs/API/COMMANDS/FINANCE.MD",
+    "name": "Nexus Finance API",
+    "plugin_instructions": "The"
+}

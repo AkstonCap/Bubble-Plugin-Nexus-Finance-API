@@ -1,0 +1,147 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAC": {
+            "initialized": true,
+            "method": "get",
+            "name": "Debit/Account",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1710341358986x702204737454080000.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Debit/Account\",\"fields\":{\"_p_result.success\":{\"ret_value\":\"boolean\",\"caption\":\"success\",\"sample_value\":true,\"path\":[\"result\",\"success\"]},\"_p_result.txid\":{\"ret_value\":\"text\",\"caption\":\"txid\",\"sample_value\":\"014dd40eb37009c20e8ddab867876ec5bc9c4c3a82d98f6d6b2a460be7dfc1aa5fe744fc897cfd8feb43c50ed2f48b19680fe7032609436d8b6a831042fddcdc\",\"path\":[\"result\",\"txid\"]},\"_p_info.method\":{\"ret_value\":\"text\",\"caption\":\"info method\",\"sample_value\":\"finance/debit\",\"path\":[\"info\",\"method\"]},\"_p_info.status\":{\"ret_value\":\"text\",\"caption\":\"info status\",\"sample_value\":\"active\",\"path\":[\"info\",\"status\"]},\"_p_info.address\":{\"ret_value\":\"text\",\"caption\":\"info address\",\"sample_value\":\"18.236.179.251:59288\",\"path\":[\"info\",\"address\"]},\"_p_info.latency\":{\"ret_value\":\"text\",\"caption\":\"info latency\",\"sample_value\":\"5954.964802 ms\",\"path\":[\"info\",\"latency\"]}}}}",
+            "url": "[web server:port]finance/debit/account?pin=[pin]&session=[session]&from=[from]&amount=[amount]&to=[to]&expires=[expires]",
+            "url_params": {
+                "AAD": {
+                    "key": "web server:port",
+                    "private": true,
+                    "value": "http://private.nexus.io:7080/"
+                },
+                "AAE": {
+                    "key": "pin",
+                    "private": true,
+                    "value": ""
+                },
+                "AAF": {
+                    "key": "session",
+                    "private": true,
+                    "value": ""
+                },
+                "AAG": {
+                    "key": "from",
+                    "private": true,
+                    "value": ""
+                },
+                "AAH": {
+                    "key": "amount",
+                    "private": true,
+                    "value": ""
+                },
+                "AAI": {
+                    "key": "to",
+                    "private": true,
+                    "value": ""
+                },
+                "AAK": {
+                    "allow_blank": true,
+                    "key": "expires",
+                    "private": true,
+                    "value": "0"
+                }
+            }
+        },
+        "AAM": {
+            "initialized": true,
+            "method": "get",
+            "name": "Credit/Account",
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1710341358986x702204737454080000.plugin_api.AAM",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAM\":{\"caption\":\"Credit/Account\",\"fields\":{\"_p_result.success\":{\"ret_value\":\"boolean\",\"caption\":\"success\",\"sample_value\":true,\"path\":[\"result\",\"success\"]},\"_p_result.address\":{\"ret_value\":\"text\",\"caption\":\"address\",\"sample_value\":\"1111JEKNVnkbo3jma5nREBBJCDoXFVeKkD56V3xKrvSMJMUc\",\"path\":[\"result\",\"address\"]},\"_p_result.txid\":{\"ret_value\":\"text\",\"caption\":\"txid\",\"sample_value\":\"01a3494b92f6c576d4b565190e69d3e87611fd0bfe383942964642780bfceb334538c7bcbe28f7cd976f5b82c365a95b7c267af994e4c07b93e8c612e338c0fe\",\"path\":[\"result\",\"txid\"]},\"_p_info.method\":{\"ret_value\":\"text\",\"caption\":\"info method\",\"sample_value\":\"finance/credit\",\"path\":[\"info\",\"method\"]},\"_p_info.status\":{\"ret_value\":\"text\",\"caption\":\"info status\",\"sample_value\":\"active\",\"path\":[\"info\",\"status\"]},\"_p_info.address\":{\"ret_value\":\"text\",\"caption\":\"info address\",\"sample_value\":\"52.24.9.153:38068\",\"path\":[\"info\",\"address\"]},\"_p_info.latency\":{\"ret_value\":\"text\",\"caption\":\"info latency\",\"sample_value\":\"6023.599999 ms\",\"path\":[\"info\",\"latency\"]}}}}",
+            "url": "[web server:port]finance/credit/account?pin=[pin]&session=[session]&txid=[txid]",
+            "url_params": {
+                "AAN": {
+                    "key": "web server:port",
+                    "private": true,
+                    "value": "http://private.nexus.io:7080/"
+                },
+                "AAO": {
+                    "key": "pin",
+                    "private": true,
+                    "value": ""
+                },
+                "AAP": {
+                    "key": "session",
+                    "private": true,
+                    "value": ""
+                },
+                "AAQ": {
+                    "key": "txid",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAR": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get/Account",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1710341358986x702204737454080000.plugin_api.AAR",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAR\":{\"caption\":\"Get/Account\",\"fields\":{\"_p_result.owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"b7cbef6130a99ce1f48515e72e39cb22a5fb451b8d8aec8e7f9de7db5a852bdc\",\"path\":[\"result\",\"owner\"]},\"_p_result.version\":{\"ret_value\":\"number\",\"caption\":\"version\",\"sample_value\":1,\"path\":[\"result\",\"version\"]},\"_p_result.created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1691500709,\"path\":[\"result\",\"created\"]},\"_p_result.modified\":{\"ret_value\":\"number\",\"caption\":\"modified\",\"sample_value\":1691510863,\"path\":[\"result\",\"modified\"]},\"_p_result.type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"ACCOUNT\",\"path\":[\"result\",\"type\"]},\"_p_result.balance\":{\"ret_value\":\"number\",\"caption\":\"balance\",\"sample_value\":48.97,\"path\":[\"result\",\"balance\"]},\"_p_result.token\":{\"ret_value\":\"text\",\"caption\":\"token\",\"sample_value\":\"8Dho9ruFNhfRcMbFMSeTvtEvp1mPQwuBB1DQTpE2iXmNgfXeyuH\",\"path\":[\"result\",\"token\"]},\"_p_result.ticker\":{\"ret_value\":\"text\",\"caption\":\"ticker\",\"sample_value\":\"DIST\",\"path\":[\"result\",\"ticker\"]},\"_p_result.address\":{\"ret_value\":\"text\",\"caption\":\"address\",\"sample_value\":\"8BfBUPm5BmVJzjNVae4FvaNY9PbSJ7ajyBqVbwABUP6XFURfpUb\",\"path\":[\"result\",\"address\"]},\"_p_result.name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"chad::dist-account1\",\"path\":[\"result\",\"name\"]},\"_p_result.total\":{\"ret_value\":\"number\",\"caption\":\"total\",\"sample_value\":48.97,\"path\":[\"result\",\"total\"]},\"_p_info.method\":{\"ret_value\":\"text\",\"caption\":\"info method\",\"sample_value\":\"finance/get\",\"path\":[\"info\",\"method\"]},\"_p_info.status\":{\"ret_value\":\"text\",\"caption\":\"info status\",\"sample_value\":\"active\",\"path\":[\"info\",\"status\"]},\"_p_info.address\":{\"ret_value\":\"text\",\"caption\":\"info address\",\"sample_value\":\"54.184.120.55:44170\",\"path\":[\"info\",\"address\"]},\"_p_info.latency\":{\"ret_value\":\"text\",\"caption\":\"info latency\",\"sample_value\":\"0.243788 ms\",\"path\":[\"info\",\"latency\"]}}}}",
+            "url": "[web server:port]finance/get/account?session=[session]&name=[name]&address=[address]",
+            "url_params": {
+                "AAS": {
+                    "key": "web server:port",
+                    "private": true,
+                    "value": "http://private.nexus.io:7080/"
+                },
+                "AAU": {
+                    "key": "session",
+                    "private": true,
+                    "value": ""
+                },
+                "AAV": {
+                    "allow_blank": true,
+                    "key": "name",
+                    "private": true,
+                    "value": ""
+                },
+                "AAW": {
+                    "allow_blank": true,
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AAX": {
+            "initialized": true,
+            "method": "get",
+            "name": "List/Account",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1710341358986x702204737454080000.plugin_api.AAX",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAX\":{\"caption\":\"List/Account\",\"fields\":{\"_p_result\":{\"ret_value\":\"list.api.1710341358986x702204737454080000.plugin_api.AAX.result\",\"caption\":\"result\",\"path\":[\"result\"]},\"_p_info.method\":{\"ret_value\":\"text\",\"caption\":\"info method\",\"sample_value\":\"finance/list\",\"path\":[\"info\",\"method\"]},\"_p_info.status\":{\"ret_value\":\"text\",\"caption\":\"info status\",\"sample_value\":\"active\",\"path\":[\"info\",\"status\"]},\"_p_info.address\":{\"ret_value\":\"text\",\"caption\":\"info address\",\"sample_value\":\"34.209.113.5:53970\",\"path\":[\"info\",\"address\"]},\"_p_info.latency\":{\"ret_value\":\"text\",\"caption\":\"info latency\",\"sample_value\":\"14.773390 ms\",\"path\":[\"info\",\"latency\"]}}},\"plugin_api.AAX.result\":{\"caption\":\"List/Account result\",\"fields\":{\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"b7cbef6130a99ce1f48515e72e39cb22a5fb451b8d8aec8e7f9de7db5a852bdc\",\"path\":[\"owner\"]},\"_p_version\":{\"ret_value\":\"number\",\"caption\":\"version\",\"sample_value\":1,\"path\":[\"version\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1691500709,\"path\":[\"created\"]},\"_p_modified\":{\"ret_value\":\"number\",\"caption\":\"modified\",\"sample_value\":1691510863,\"path\":[\"modified\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"ACCOUNT\",\"path\":[\"type\"]},\"_p_balance\":{\"ret_value\":\"number\",\"caption\":\"balance\",\"sample_value\":48.97,\"path\":[\"balance\"]},\"_p_token\":{\"ret_value\":\"text\",\"caption\":\"token\",\"sample_value\":\"8Dho9ruFNhfRcMbFMSeTvtEvp1mPQwuBB1DQTpE2iXmNgfXeyuH\",\"path\":[\"token\"]},\"_p_ticker\":{\"ret_value\":\"text\",\"caption\":\"ticker\",\"sample_value\":\"DIST\",\"path\":[\"ticker\"]},\"_p_address\":{\"ret_value\":\"text\",\"caption\":\"address\",\"sample_value\":\"8BfBUPm5BmVJzjNVae4FvaNY9PbSJ7ajyBqVbwABUP6XFURfpUb\",\"path\":[\"address\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"chad::dist-account1\",\"path\":[\"name\"]},\"_p_total\":{\"ret_value\":\"number\",\"caption\":\"total\",\"sample_value\":48.97,\"path\":[\"total\"]}}}}",
+            "url": "[web server:port]finance/list/account?session=[session]",
+            "url_params": {
+                "AAY": {
+                    "key": "web server:port",
+                    "private": true,
+                    "value": "http://private.nexus.io:7080/"
+                },
+                "AAZ": {
+                    "key": "session",
+                    "private": true,
+                    "value": "",
+                    "visibility": "public"
+                }
+            }
+        }
+    },
+    "human": "Nexus FInance API"
+}
